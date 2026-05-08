@@ -1,86 +1,48 @@
-# ❄️ Terminal Snow Animation
+# ❄️ Termination
 
-A simple Python script that creates a snowfall animation directly inside your terminal.
+Snow and fire animations for your terminal... Works best with dark themes, transparent terminals, and aesthetic setups ✨
 
 Feel free to use, modify, or improve it 😄
 
----
-
-# 🚀 Usage
-
-Run the script with:
+## Install
 
 ```bash
-python3 ~/.snow.py
+curl -fsSL https://raw.githubusercontent.com/white1wolf1/42_Termination/main/install.sh | bash -s -- install
 ```
 
-To exit the animation:
+Clones repo to `~/.termination` and adds a `termination` command to your PATH.
 
-```text
-CTRL + C
-```
-
----
-
-# 🧊 Script
-
-Create the file:
+## Usage
 
 ```bash
-nano ~/.snow.py
+termination          # random (snow or fire)
+termination --snow   # force snow
+termination --fire   # force fire
 ```
 
-Paste code inside:
+Press `Ctrl + C` to stop.
 
-
-Save with:
-
-```text
-CTRL + O
-ENTER
-CTRL + X
-```
-
----
-
-# ⚙️ Auto Start on Terminal Launch
-
-## 🐚 Zsh
-
-Add the script to `.zshrc`:
+## Commands
 
 ```bash
-echo 'python3 ~/.snow.py' >> ~/.zshrc
-source ~/.zshrc
+# Install
+curl -fsSL https://raw.githubusercontent.com/white1wolf1/42_Termination/main/install.sh | bash -s -- install
+
+# Update
+curl -fsSL https://raw.githubusercontent.com/white1wolf1/42_Termination/main/install.sh | bash -s -- update
+
+# Uninstall (removes ~/.termination and the termination command)
+curl -fsSL https://raw.githubusercontent.com/white1wolf1/42_Termination/main/install.sh | bash -s -- uninstall
 ```
 
----
-
-## 🐚 Bash
-
-Add the script to `.bashrc`:
+Or clone and run directly:
 
 ```bash
-echo 'python3 ~/.snow.py' >> ~/.bashrc
-source ~/.bashrc
+git clone https://github.com/white1wolf1/42_Termination.git
+cd 42_Termination
+bash install.sh install
 ```
 
----
+## License
 
-# 🛑 Disable Auto Start
-
-Remove this line from your `.bashrc` or `.zshrc`:
-
-```bash
-python3 ~/.snow.py
-```
-
----
-
-# ❄️ Enjoy Your Snowy Terminal
-
-Works especially well with:
-- transparent terminals
-- dark themes
-- hacker / matrix setups
-- aesthetic Linux desktops ✨
+MIT
